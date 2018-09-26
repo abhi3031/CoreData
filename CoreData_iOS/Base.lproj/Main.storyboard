@@ -44,85 +44,73 @@
                                     </textField>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="Ueo-6q-9R3">
-                                <rect key="frame" x="30" y="232" width="315" height="78"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="N64-2I-5Uz">
+                                <rect key="frame" x="30" y="222" width="121" height="141"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="5ka-hE-EUL">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhw-4K-rxj">
-                                                <rect key="frame" x="0.0" y="0.0" width="148.5" height="30"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <state key="normal" title="INSERT">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btn_insert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rV8-Go-11D"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wnO-JQ-UuS">
-                                                <rect key="frame" x="166.5" y="0.0" width="148.5" height="30"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <state key="normal" title="UPDATE">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btn_update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8Mq-i7-CdE"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="wnO-JQ-UuS" firstAttribute="width" secondItem="vhw-4K-rxj" secondAttribute="width" id="1If-du-X9t"/>
-                                            <constraint firstItem="wnO-JQ-UuS" firstAttribute="height" secondItem="vhw-4K-rxj" secondAttribute="height" id="LDF-Yv-Qu6"/>
-                                        </constraints>
-                                    </stackView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="18" translatesAutoresizingMaskIntoConstraints="NO" id="GCz-Z6-mbM">
-                                        <rect key="frame" x="0.0" y="48" width="315" height="30"/>
-                                        <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aEH-gD-dHE">
-                                                <rect key="frame" x="0.0" y="0.0" width="148.5" height="30"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <state key="normal" title="SELECT">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btn_select:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uC2-MO-NAB"/>
-                                                </connections>
-                                            </button>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXA-al-4uo">
-                                                <rect key="frame" x="166.5" y="0.0" width="148.5" height="30"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <state key="normal" title="DELETE">
-                                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                </state>
-                                                <connections>
-                                                    <action selector="btn_delete:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1jJ-Fj-hrr"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                        <constraints>
-                                            <constraint firstItem="NXA-al-4uo" firstAttribute="height" secondItem="aEH-gD-dHE" secondAttribute="height" id="8k3-Qx-CH7"/>
-                                            <constraint firstItem="NXA-al-4uo" firstAttribute="width" secondItem="aEH-gD-dHE" secondAttribute="width" id="saP-IV-PLJ"/>
-                                        </constraints>
-                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vD1-Dg-y4Q">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="0.50196081400000003" blue="0.25098040700000002" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="INSERT">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="insert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xNP-Z2-NJH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jcz-1U-mOa">
+                                        <rect key="frame" x="0.0" y="37" width="121" height="30"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="SELECT">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="retrive:" destination="BYZ-38-t0r" eventType="touchUpInside" id="r1D-Zn-wge"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xNA-jc-lnT">
+                                        <rect key="frame" x="0.0" y="74" width="121" height="30"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="UPDATE">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="update:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xgj-y0-MBC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b4j-9i-k89">
+                                        <rect key="frame" x="0.0" y="111" width="121" height="30"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Delete">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="delete_:" destination="BYZ-38-t0r" eventType="touchUpInside" id="emt-6Z-CbE"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="121" id="Fu1-Da-o0u"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ueo-6q-9R3" firstAttribute="top" secondItem="Uzq-sC-rdW" secondAttribute="bottom" constant="30" id="FQq-PS-sIX"/>
+                            <constraint firstItem="N64-2I-5Uz" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="3St-lu-gWz"/>
                             <constraint firstAttribute="trailing" secondItem="Uzq-sC-rdW" secondAttribute="trailing" constant="30" id="I16-ca-QXk"/>
                             <constraint firstItem="Uzq-sC-rdW" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="Rmq-rd-w2x"/>
                             <constraint firstItem="Uzq-sC-rdW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="ThH-7X-HTv"/>
-                            <constraint firstItem="Ueo-6q-9R3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="30" id="l09-9z-Cnx"/>
-                            <constraint firstAttribute="trailing" secondItem="Ueo-6q-9R3" secondAttribute="trailing" constant="30" id="vyx-ow-nMk"/>
+                            <constraint firstItem="N64-2I-5Uz" firstAttribute="top" secondItem="Uzq-sC-rdW" secondAttribute="bottom" constant="20" id="eN7-gf-tkJ"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btn_delete" destination="b4j-9i-k89" id="uaa-y1-WeY"/>
+                        <outlet property="btn_insert" destination="vD1-Dg-y4Q" id="7aI-Xb-RGm"/>
+                        <outlet property="btn_select" destination="jcz-1U-mOa" id="Iwb-JZ-t7P"/>
+                        <outlet property="btn_update" destination="xNA-jc-lnT" id="dLA-B3-cpe"/>
                         <outlet property="txt_add" destination="LOX-2G-bMf" id="gak-qO-ITm"/>
                         <outlet property="txt_email" destination="Xvd-ss-FSf" id="J3Y-Su-LPB"/>
                         <outlet property="txt_name" destination="Acv-Bt-Vuy" id="aGg-1N-xHK"/>

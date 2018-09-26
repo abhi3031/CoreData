@@ -7,8 +7,12 @@ class ViewController: UIViewController,CoredataResultDelegate{
     @IBOutlet weak var txt_email: UITextField!
     @IBOutlet weak var txt_add: UITextField!
     
+    @IBOutlet weak var btn_update: UIButton!
    
+    @IBOutlet weak var btn_delete: UIButton!
+    @IBOutlet weak var btn_insert: UIButton!
     
+    @IBOutlet weak var btn_select: UIButton!
     @IBOutlet weak var txt_name: UITextField!
     
     
@@ -16,7 +20,7 @@ class ViewController: UIViewController,CoredataResultDelegate{
         super.viewDidLoad()
       }
 
-    @IBAction func btn_insert(_ sender: Any) {
+    @IBAction func insert(_ sender: Any) {
         let emp = InsertDataModel(address: txt_add.text!, name: txt_name.text!, email: txt_email.text!);
         let obj = Coredata_Task();
         obj.Insert(dataobj: emp);
@@ -24,34 +28,46 @@ class ViewController: UIViewController,CoredataResultDelegate{
         txt_email.text = "";
         txt_name.text = "" ;
         txt_add.becomeFirstResponder();
-       
     }
-    @IBAction func btn_select(_ sender: Any) {
+   
+   
+    @IBAction func retrive(_ sender: Any) {
         let emp = SelectDataModel(address: txt_add.text!);
         let obj = Coredata_Task();
-         obj.delgate = self;
+        obj.delgate = self;
         obj.Select(selctobj: emp);
-       
-        
+
     }
     
     func getdata(add: String, name: String, email: String) {
-        
-           self.txt_add.text = add;
+             self.txt_add.text = add;
              self.txt_email.text = email;
             self.txt_name.text = name;
+   }
+  
     
-       
-        
-    }
-    @IBAction func btn_delete(_ sender: Any) {
-    
-       
-    }
-    @IBAction func btn_update(_ sender: Any) {
-        
-    }
+    @IBAction func update(_ sender: Any) {
+        let emp = InsertDataModel(address: txt_add.text!, name: txt_name.text!, email: txt_email.text!);
+        let obj = Coredata_Task();
+        obj.update(dataobj: emp);
+        txt_add.text = "";
+        txt_email.text = "";
+        txt_name.text = "" ;
+        txt_add.becomeFirstResponder();
 
+    }
+  
+
+    @IBAction func delete_(_ sender: Any) {
+        let emp = SelectDataModel(address: txt_add.text!);
+        let obj = Coredata_Task();
+        obj.delete(selctobj: emp);
+        txt_add.text = "";
+        txt_email.text = "";
+        txt_name.text = "" ;
+        txt_add.becomeFirstResponder();
+
+    }
 
 }
 
